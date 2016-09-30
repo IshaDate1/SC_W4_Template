@@ -1,6 +1,6 @@
-#include "IntakeBall.h"
+#include "BrakeIntake.h"
 
-IntakeBall::IntakeBall()
+BrakeIntake::BrakeIntake()
 {
 	Requires(Intake);
 	// Use Requires() here to declare subsystem dependencies
@@ -8,31 +8,32 @@ IntakeBall::IntakeBall()
 }
 
 // Called just before this Command runs the first time
-void IntakeBall::Initialize()
+void BrakeIntake::Initialize()
 {
 
 }
 
 // Called repeatedly when this Command is scheduled to run
-void IntakeBall::Execute()
+void BrakeIntake::Execute()
 {
-	Intake->IntakeBall();
+	Intake->BrakeIntake();
 }
+
 // Make this return true when this Command no longer needs to run execute()
-bool IntakeBall::IsFinished()
+bool BrakeIntake::IsFinished()
 {
 	return true;
 }
 
 // Called once after isFinished returns true
-void IntakeBall::End()
+void BrakeIntake::End()
 {
 
 }
 
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
-void IntakeBall::Interrupted()
+void BrakeIntake::Interrupted()
 {
 
 }
