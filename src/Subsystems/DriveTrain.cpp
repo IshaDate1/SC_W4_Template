@@ -6,7 +6,6 @@
  */
 
 #include <Subsystems/DriveTrain.h>
-
 #define max(x, y) (((x) > (y)) ? (x) : (y))
 
 DriveTrain::DriveTrain() :
@@ -75,3 +74,4 @@ float DriveTrain::Limit(float num, float max)
 
     return num;
 }
+void

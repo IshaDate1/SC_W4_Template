@@ -14,7 +14,7 @@ public:
 	virtual ~DriveTrain();
 	void arcadeDrive(float move, float rotate);
 	static float Limit(float num, float max);
-
+	void InitDefaultCommand();
 
 private:
 	Talon* leftMotor;
