@@ -1,11 +1,13 @@
 /*
  * DriveTrain.cpp
+
  *
  *  Created on: Sep 23, 2016
  *      Author: Nir
  */
 
 #include <Subsystems/DriveTrain.h>
+#include <Commands/ArcadeDrive.h>
 #define max(x, y) (((x) > (y)) ? (x) : (y))
 
 DriveTrain::DriveTrain() :
@@ -74,4 +76,7 @@ float DriveTrain::Limit(float num, float max)
 
     return num;
 }
-void
+void DriveTrain::InitDefaultCommand()
+{
+	void DriveTrain::SetDefaultCommand(Command* ArcadeDrive);
+	}

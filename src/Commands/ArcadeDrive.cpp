@@ -15,7 +15,7 @@ void ArcadeDrive::Initialize()
 // Called repeatedly when this Command is scheduled to run
 void ArcadeDrive::Execute()
 {
-	DriveTrain::arcadeDrive(OI);
+	DriveTrain::arcadeDrive(OI::getDriveStick()::getY(), OI::getDriveStick()::getZ());
 }
 
 // Make this return true when this Command no longer needs to run execute()
